@@ -1,0 +1,6 @@
+<form (ngSubmit)="addTodo()">
+    <input class="form-control" placeholder="Describe your task" [(ngModel)]="text" name="text" />
+    <br/>
+    <p>{{text}}</p>
+    <button class="btn btn-primary btn-sm" type="submit">Add</button>
+</form>

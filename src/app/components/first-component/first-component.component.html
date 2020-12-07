@@ -1,0 +1,11 @@
+
+    <app-todo 
+     *ngFor="let Component of firstComponent"
+     (toggleEvent)="toggleTodo($event)"
+     (deleteEvent)="deleteTodo($event)"
+     [todo]="Component">
+     
+    </app-todo>
+    
+    <app-addtodo (AddTodoEvent)="addTodo($event)"></app-addtodo>
+
