@@ -1,4 +1,6 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import Todo from 'src/app/Modules/Todo';
+
 
 @Component({
   selector: 'app-addtodo',
@@ -33,11 +35,12 @@ export class AddtodoComponent implements OnInit {
 }
 
   addTodo() {
-    this.AddTodoEvent.emit({
-      id: this.generateUUID(),
-      text: this.text,
-      completed: false
-    })
+    const todo = new Todo (
+      this.text,
+      false
+    )
+
+    this.AddTodoEvent.emit(todo)
     this.text = ""
   }
 
