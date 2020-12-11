@@ -8,7 +8,7 @@ import { TodoService } from 'src/app/services/todo.service';
   styleUrls: ['./first-component.component.css']
 })
 export class FirstComponentComponent implements OnInit {
-  firstComponent: Todo[];
+  firstComponent: Todo [];
 
   constructor(private todoService: TodoService) { }
 

@@ -3,11 +3,14 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FirstComponentComponent } from './components/first-component/first-component.component';
 import { TodoComponent } from './components/todo/todo.component';
 import { AddtodoComponent } from './components/addtodo/addtodo.component';
+import { NavComponent } from './components/nav/nav.component';
+
+
 
 
 @NgModule({
@@ -15,7 +18,9 @@ import { AddtodoComponent } from './components/addtodo/addtodo.component';
     AppComponent,
     FirstComponentComponent,
     TodoComponent,
-    AddtodoComponent
+    AddtodoComponent,
+    routingComponents,
+    NavComponent,
   ],
   imports: [
     BrowserModule,

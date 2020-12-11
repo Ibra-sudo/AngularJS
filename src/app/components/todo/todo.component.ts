@@ -8,7 +8,7 @@ import Todo from 'src/app/Modules/Todo'
 })
 export class TodoComponent {
 
-  @Input() todo: Todo; 
+  @Input() todo: Todo
   @Output() toggleEvent = new EventEmitter()
   @Output() deleteEvent = new EventEmitter()
 
